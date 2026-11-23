@@ -21,6 +21,11 @@ namespace RPGLibrary
         public int y;
 
         /// <summary>
+        /// Индекс в атласе
+        /// </summary>
+        public int atlasNumber;
+
+        /// <summary>
         /// Здоровье игрока
         /// </summary>
         public int hp = 100;
@@ -55,7 +60,7 @@ namespace RPGLibrary
         /// <summary>
         /// Добавляет предмет в инвентарь игрока
         /// </summary>
-        /// <param name="item"></param>
+        /// <param name="item">добавляемый предмет</param>
         public void AddItem(Item item)
         {
             inventory.Add(item);
